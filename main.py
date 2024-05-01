@@ -33,9 +33,3 @@ def buzz_alert(audio_segments):
     audio_segments[:, 2] = 0  # Reset the last segment, ready for new data
     
     return alert, audio_segments
-
-# Example usage
-# Create a dummy 3xN array where N is the sample rate times 1 second (e.g., 44100 for CD-quality audio)
-audio_data = np.random.rand(3, 44100)  # Replace with your actual audio data
-alert, updated_audio_segments = buzz_alert(audio_data)
-print("Alert:", alert)
