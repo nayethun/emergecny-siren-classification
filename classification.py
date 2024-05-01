@@ -49,5 +49,7 @@ clf.fit(X_train, y_train)
 y_pred = clf.predict(X_test)
 
 # Evaluate the predictions
+print("confusion matrix")
 print(confusion_matrix(y_test, y_pred))
+print("classification report")
 print(classification_report(y_test, y_pred))
